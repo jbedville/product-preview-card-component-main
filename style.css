@@ -13,6 +13,7 @@ body {
 
 .container-main {
     display: flex;
+    flex-direction: row;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,4 +99,10 @@ body {
 .cart-button:hover {
     background-color: hsl(212, 21%, 14%);
     transition: 0.3s;
+}
+
+@media screen and (max-width: 375px) {
+.container-main {
+    flex-direction: column;
+}
 }
