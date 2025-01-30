@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.container-main {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-left img {
+    max-width: 300px;
+}
+
+.container-right {
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 25px 0 25px;
+}
+
+.perfume {
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+}
+
+.heading {
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.subtitle {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.4rem;
+    padding-right: 5px;
+}
+
+.container-cost {
+    display: flex;
+    align-items: center;
+}
+
+.cost-one {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.cost-two {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 25px;
+}
+
+.cart-button {
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    height: 3rem;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.cart-button img {
+    color: #fff;
+    margin-right: 10px;
+}
+.cart-button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    
+}
+
+.cart-button:hover {
+    background-color: hsl(212, 21%, 14%);
+    transition: 0.3s;
+}
