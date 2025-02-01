@@ -26,6 +26,10 @@ body {
     max-width: 300px;
 }
 
+.img-mobile {
+    display: none;
+}
+
 .container-right {
     width: 300px;
     background-color: #fff;
@@ -53,6 +57,7 @@ body {
     color: hsl(228, 12%, 48%);
     line-height: 1.4rem;
     padding-right: 5px;
+    font-weight: 500;
 }
 
 .container-cost {
@@ -101,8 +106,34 @@ body {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
 .container-main {
     flex-direction: column;
+}
+.img-desktop {
+    display: none;
+}
+.img-mobile {
+    display: block;
+    min-width: 350px;
+}
+.container-right {
+    width: 350px; 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    padding-top: 15px;
+}
+.container-right div {
+    padding: 7px 0;
+}
+.heading {
+    font-size: 16px;
+}
+.subtitle {
+    font-size: 14.3px;
+}
+.cost-one, .cost-two {
+    padding: 7px 0 13px 0;
 }
 }
